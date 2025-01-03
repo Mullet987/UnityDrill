@@ -18,8 +18,15 @@ MonoBehaviour:
   - Dlg_0E166D4A.DisplayName
   - Dlg_B4FDD5E1.DisplayName
   - Dlg_E44B79F6.DisplayName
+  - Dlg_6C3F2D53.DisplayName
   - DFr_6A78384D.Text
   - DFr_4A213CA4.Text
+  - DFr_367D6BEB.Text
+  - DFr_972C9106.Text
+  - DFr_ADCCD197.Text
+  - DFr_81112162.Text
+  - DFr_D4FA0816.Text
+  - DFr_01D14046.Text
   - DFr_8F416FF4.Text
   - DFr_649C8A53.Text
   - DFr_D31D01DC.Text
@@ -27,13 +34,15 @@ MonoBehaviour:
   - DFr_1EBD8D44.Text
   - DFr_95EE4F56.Text
   - DFr_F9C087AC.Text
+  - DFr_8634D062.Text
+  - DFr_FC705A7B.Text
+  - DFr_C8D18326.Text
+  - DFr_357AC6C1.Text
   - DFr_13238C94.Text
-  - DFr_367D6BEB.Text
-  - DFr_ADCCD197.Text
-  - DFr_972C9106.Text
-  - DFr_81112162.Text
-  - DFr_D4FA0816.Text
-  - DFr_01D14046.Text
+  - DFr_D6FA6B32.Text
+  - DFr_19FA7363.Text
+  - DFr_8237AB26.Text
+  - DFr_38280C04.Text
   - Ntt_9C797776.DisplayName
   - Ntt_6CF056D5.DisplayName
   - Ntt_1D044B64.DisplayName
@@ -45,22 +54,33 @@ MonoBehaviour:
   - NPC_RED
   - NPC_YELLOW
   - NPC_BLUE
+  - ITEMS
   - I AM GREEN
-  - I AM RED
-  - I AM YELLOW
-  - AM I ANGRY?
-  - '"FUCK!"'
-  - '"THANK YOU"'
-  - '"FUCK! I WILL KILL YOU!"'
-  - '"I AM NOT KILLER."'
-  - '"OH MY GOD!"'
-  - I AM BLUE
-  - YES, I KNOW YOUR NAME
-  - '"WHAT YOUR THINK ABOUT CAKE?"'
-  - '"OK. GOOD."'
-  - I LIKE!
-  - I DISLIKE!
-  - '"OK."'
+  - "\"\uB098\uB294 \uBE68\uAC15\uC774\uC57C\""
+  - "\"\uADF8\uCE58, \uB09C \uB124 \uC774\uB984\uC744 \uC774\uBBF8 \uC544\uB294\uAC78.\""
+  - "\"\uC88B\uC544, \uC544\uC8FC \uC88B\uC544.\""
+  - "\"\uCF00\uC774\uD06C \uC88B\uC544\uD574? \uCE58\uC988 \uCF00\uC78C? \uCD08\uCF54
+    \uCF00\uC78C?\""
+  - "\"\uCE58\uC988 \uCF00\uC78C!\""
+  - "\"\uCD08\uCF54 \uCF00\uC78C!\""
+  - "\"\uC88B\uC544, \uAE30\uC5B5\uD574\uB450\uACA0\uC5B4.\""
+  - "\"\uB098\uB294 \uB178\uB791\uC774\uC57C.\""
+  - "\"\uB0B4\uAC00 \uD654\uB09C \uAC70\uCC98\uB7FC \uBCF4\uC5EC?\""
+  - "\"\uC5B4, \uB108 \uC880 \uD654\uB09C \uB4EF?\""
+  - "\"\uC544\uB2C8, \uC804\uD600?\""
+  - "\"\uB9DE\uC544! \uB098 \uD654\uB0AC\uB2E4!\""
+  - "\"\uB9DE\uC544! \uB098 \uD654 \uC548 \uB0AC\uC5B4!\""
+  - "\"\uB0B4\uAC00 \uB3C5\uC2EC\uC220\uC744 \uD560 \uC218 \uC788\uC5C8\uB2E4\uB2C8!\""
+  - "\"\uB178\uB791! \uB124\uAC00 \uBC94\uC778\uC774\uC57C!\""
+  - "\"\uC5B4\uB5BB\uAC8C \uADF8\uB7F0 \uC794\uC778\uD55C \uC9D3\uC744!\""
+  - "\"\uB0B4 \uC798\uBABB\uC774\uC57C, \uC790\uBC31\uD560\uAC8C.\""
+  - "\"\uB110 \uCCB4\uD3EC\uD55C\uB2E4!\""
+  - "\uB098\uB294 \uD53C\uD574\uC790\uC57C. \uC8FD\uC740 \uC0AC\uB78C\uC774 \uBB54
+    \uB9D0\uC744 \uD560 \uC218 \uC788\uACA0\uC5B4?"
+  - "RED\uB294 \uC81C\uBE75\uC744 \uC88B\uC544\uD574."
+  - "GREEN\uC740 \uC601\uC5B4\uB97C \uC798 \uD574."
+  - "\uBD88\uC30D\uD55C BLUE."
+  - "YELLO\uC758 \uBC29\uC5D0 \uD53C\uAC00 \uBB3B\uC740 \uCE7C\uC774 \uC788\uB2E4\uB2C8..."
   - HERO
   - YELLOW
   - RED

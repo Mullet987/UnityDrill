@@ -31,18 +31,14 @@ namespace Articy.Noname.GlobalVariables
         #region Initialize static VariableName set
         static ArticyGlobalVariables()
         {
-            variableNames.Add("NPCs.BLUE_Item");
-            variableNames.Add("NPCs.BLUE_Angry");
             variableNames.Add("NPCs.BLUE_FirstMeet");
-            variableNames.Add("NPCs.Green_Item");
-            variableNames.Add("NPCs.Green_Angry");
             variableNames.Add("NPCs.Green_FirstMeet");
-            variableNames.Add("NPCs.RED_Item");
-            variableNames.Add("NPCs.RED_Angry");
+            variableNames.Add("NPCs.Gamestate_End");
             variableNames.Add("NPCs.RED_FirstMeet");
-            variableNames.Add("NPCs.YELLOW_Item");
             variableNames.Add("NPCs.YELLOW_Angry");
             variableNames.Add("NPCs.YELLOW_FirstMeet");
+            variableNames.Add("NPCs.FIND_KNIFE");
+            variableNames.Add("NPCs.BLUE_Angry");
         }
         #endregion
         

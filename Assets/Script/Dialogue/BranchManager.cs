@@ -29,7 +29,7 @@ public class BranchManager : MonoBehaviour
 
         if (target is IDialogueFragment)
         {
-            //기이하게도 텍스트는 Localizable이 아니면 출력이 안 되는데. Branch는 IObjectWithMenuText만으로도 잘만 되더라.
+            //의하한 점: 기이하게도 텍스트는 IObjectWithLocalizableMenuText가 아니면 출력이 안 되는데. Branch는 IObjectWithMenuText만으로도 잘만 되더라.
             if (target is IObjectWithMenuText objWithMenuText)
                 branchText.text = objWithMenuText.MenuText;
             else if (target is IObjectWithLocalizableMenuText objWithLocalizableMenuText)

@@ -26,29 +26,8 @@ namespace Articy.Noname.GlobalVariables
         [SerializeField()]
         private BaseGlobalVariables _VariableStorage;
         
-        public string BLUE_Item
-        {
-            get
-            {
-                return _VariableStorage.Internal_GetVariableValueString(0, true);
-            }
-            set
-            {
-                _VariableStorage.Internal_SetVariableValueString(0, value);
-            }
-        }
-        
         // 
-        public string Unresolved_BLUE_Item
-        {
-            get
-            {
-                return _VariableStorage.Internal_GetVariableValueString(0, false);
-            }
-        }
-        
-        // 
-        public bool BLUE_Angry
+        public bool BLUE_FirstMeet
         {
             get
             {
@@ -61,7 +40,7 @@ namespace Articy.Noname.GlobalVariables
         }
         
         // 
-        public bool BLUE_FirstMeet
+        public bool Green_FirstMeet
         {
             get
             {
@@ -73,29 +52,8 @@ namespace Articy.Noname.GlobalVariables
             }
         }
         
-        public string Green_Item
-        {
-            get
-            {
-                return _VariableStorage.Internal_GetVariableValueString(1, true);
-            }
-            set
-            {
-                _VariableStorage.Internal_SetVariableValueString(1, value);
-            }
-        }
-        
         // 
-        public string Unresolved_Green_Item
-        {
-            get
-            {
-                return _VariableStorage.Internal_GetVariableValueString(1, false);
-            }
-        }
-        
-        // 
-        public bool Green_Angry
+        public bool Gamestate_End
         {
             get
             {
@@ -108,7 +66,7 @@ namespace Articy.Noname.GlobalVariables
         }
         
         // 
-        public bool Green_FirstMeet
+        public bool RED_FirstMeet
         {
             get
             {
@@ -120,29 +78,8 @@ namespace Articy.Noname.GlobalVariables
             }
         }
         
-        public string RED_Item
-        {
-            get
-            {
-                return _VariableStorage.Internal_GetVariableValueString(2, true);
-            }
-            set
-            {
-                _VariableStorage.Internal_SetVariableValueString(2, value);
-            }
-        }
-        
         // 
-        public string Unresolved_RED_Item
-        {
-            get
-            {
-                return _VariableStorage.Internal_GetVariableValueString(2, false);
-            }
-        }
-        
-        // 
-        public bool RED_Angry
+        public bool YELLOW_Angry
         {
             get
             {
@@ -155,7 +92,7 @@ namespace Articy.Noname.GlobalVariables
         }
         
         // 
-        public bool RED_FirstMeet
+        public bool YELLOW_FirstMeet
         {
             get
             {
@@ -167,29 +104,8 @@ namespace Articy.Noname.GlobalVariables
             }
         }
         
-        public string YELLOW_Item
-        {
-            get
-            {
-                return _VariableStorage.Internal_GetVariableValueString(3, true);
-            }
-            set
-            {
-                _VariableStorage.Internal_SetVariableValueString(3, value);
-            }
-        }
-        
         // 
-        public string Unresolved_YELLOW_Item
-        {
-            get
-            {
-                return _VariableStorage.Internal_GetVariableValueString(3, false);
-            }
-        }
-        
-        // 
-        public bool YELLOW_Angry
+        public bool FIND_KNIFE
         {
             get
             {
@@ -202,7 +118,7 @@ namespace Articy.Noname.GlobalVariables
         }
         
         // 
-        public bool YELLOW_FirstMeet
+        public bool BLUE_Angry
         {
             get
             {
@@ -217,18 +133,14 @@ namespace Articy.Noname.GlobalVariables
         public void RegisterVariables(BaseGlobalVariables aStorage)
         {
             _VariableStorage = aStorage;
-            aStorage.RegisterVariable("NPCs.BLUE_Item", "");
-            aStorage.RegisterVariable("NPCs.BLUE_Angry", false);
             aStorage.RegisterVariable("NPCs.BLUE_FirstMeet", true);
-            aStorage.RegisterVariable("NPCs.Green_Item", "");
-            aStorage.RegisterVariable("NPCs.Green_Angry", false);
             aStorage.RegisterVariable("NPCs.Green_FirstMeet", true);
-            aStorage.RegisterVariable("NPCs.RED_Item", "");
-            aStorage.RegisterVariable("NPCs.RED_Angry", false);
+            aStorage.RegisterVariable("NPCs.Gamestate_End", false);
             aStorage.RegisterVariable("NPCs.RED_FirstMeet", false);
-            aStorage.RegisterVariable("NPCs.YELLOW_Item", "");
             aStorage.RegisterVariable("NPCs.YELLOW_Angry", false);
             aStorage.RegisterVariable("NPCs.YELLOW_FirstMeet", false);
+            aStorage.RegisterVariable("NPCs.FIND_KNIFE", false);
+            aStorage.RegisterVariable("NPCs.BLUE_Angry", false);
         }
     }
 }

@@ -1,10 +1,10 @@
+using TMPro;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Articy.Unity;
 using Articy.Unity.Interfaces;
 using Articy.Noname;
-using TMPro;
 
 public class ArticyflowPlayerManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 {
@@ -28,13 +28,13 @@ public class ArticyflowPlayerManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     Image previewImagePanel;
     [SerializeField]
     TextMeshProUGUI textLabel;
-
+    [SerializeField]
+    PlayerMove playerMove;
     #endregion
 
     void Start()
     {
         flowPlayer = GetComponent<ArticyFlowPlayer>();
-        //InitTextbox();
     }
 
     #region Articy 동작 구문
@@ -75,8 +75,7 @@ public class ArticyflowPlayerManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void OnFlowPlayerPaused(IFlowObject aObject)
     {
-        // If the object has a "Speaker" property try to fetch the speaker
-        // 객체에 "Speaker" 속성이 있다면 스피커를 가져오라.
+        // If the object has a "Speaker" property try to fetch the speaker (객체에 "Speaker" 속성이 있다면 스피커를 가져오라.)
         var objectWithSpeaker = aObject as IObjectWithSpeaker;
         var speakerEntity = objectWithSpeaker.Speaker as Entity;
 
@@ -88,8 +87,8 @@ public class ArticyflowPlayerManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             textLabel.text += "\n";
             textLabel.text += objWithLocalizableText.Text;
             textLabel.text += "\n";
-            Canvas.ForceUpdateCanvases(); // 즉시 레이아웃 업데이트
-            ScrollToBottomPosition();    // 스크롤 맨 아래로 이동
+            Canvas.ForceUpdateCanvases(); //즉시 캔버스 업데이트
+            ScrollToBottomPosition();    //스크롤바의 스크롤을 맨아래로 이동
         }
         else
         {
@@ -102,12 +101,12 @@ public class ArticyflowPlayerManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     }
     #endregion
 
-    #region 동작을 보조하는 메소드
+    #region 동작을 보조하는 메소드들
 
     public void StartDialogue(IArticyObject aObject)
     {
         InitTextbox();
-
+        playerMove.OnDisable();
         DialogueActive = true;
         dialogueWidget.SetActive(DialogueActive);
         flowPlayer.StartOn = aObject;
@@ -118,6 +117,7 @@ public class ArticyflowPlayerManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         DialogueActive = false;
         dialogueWidget.SetActive(DialogueActive);
         flowPlayer.FinishCurrentPausedObject();
+        playerMove.OnEnable();
     }
 
     private void ClearAllBranches()
@@ -180,6 +180,5 @@ public class ArticyflowPlayerManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             var objectWithPreviewImage = aObject as IObjectWithPreviewImage;
         }
     }
-
     #endregion
 }

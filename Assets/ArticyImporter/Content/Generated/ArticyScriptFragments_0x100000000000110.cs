@@ -34,6 +34,15 @@ namespace Articy.Noname.GlobalVariables
         }
         
         /// <summary>
+        /// ObjectID: 0x100000000000328
+        /// Articy Object ref: articy://localhost/view/62c0f369-445f-422a-b5f6-f4875a0d1b55/72057594037928744?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_720575940379282080x100000000000328Expression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.NPCs.FIND_KNIFE;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x1000000000001E5
         /// Articy Object ref: articy://localhost/view/62c0f369-445f-422a-b5f6-f4875a0d1b55/72057594037928421?pane=selected&amp;tab=current
         /// </summary>
@@ -56,6 +65,7 @@ namespace Articy.Noname.GlobalVariables
         public virtual void OnAfterDeserialize_0x100000000000110()
         {
             Conditions.Add(21836497u, this.Script_720575940379282080x1000000000001FDExpression);
+            Conditions.Add(3301663052u, this.Script_720575940379282080x100000000000328Expression);
             Instructions.Add(1684333300u, this.Script_720575940379282080x1000000000001E5Expression);
             Instructions.Add(2119988000u, this.Script_720575940379282080x1000000000001EAExpression);
         }
